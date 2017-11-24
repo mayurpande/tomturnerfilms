@@ -1,0 +1,126 @@
+@media screen and (min-width:769px){
+	.wrap{
+		min-height: calc(100vh - 99px);
+	}
+}
+
+@media screen and (min-width: 801px) {
+  
+  .main-footer{
+    flex-direction: row;
+	-webkit-flex-direction: row;
+	-mos-flex-direction:row;
+	-ms-flex-direction:row;
+	-webkit-box-direction:row;
+	
+	
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-webkit-box-justify-content:space-between;
+  }
+  
+ 
+  .footer-left{
+	margin-left:20px;
+  }
+  
+  .footer-inner{
+	justify-content:center;
+	-webkit-justify-content:center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	margin-left:60px;
+	padding-left:30px;
+  }
+  
+  .footer-right{
+	margin-left:50px;
+  }
+  
+  .footer-right li img{
+	width:100%;
+  }
+  
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 23.5%;
+  }
+}
+
+	@media screen and (max-width: 800px) {
+		#menu {
+			width:1.4em;
+			display: block;
+			background:#ddd;
+			font-size:1.35em;
+			text-align: center;
+      margin-top:30px;
+      margin-bottom:20px;
+      
+		}
+		#controls.js {
+			display: none;
+		}
+		#controls {
+			width:100%;
+      margin-left:0;
+      
+      
+		}
+    button{
+      display:block;
+      margin: 3px;
+      margin-top:2px !important;
+    }
+		
+	}
+
+	@media screen and (min-width: 800px) {
+		#menu {
+			display: none;
+		}
+	}
+
+	
+	@media screen and (min-width: 480px){
+  /************************
+  TWO COLUMN LAYOUT
+  ************************/
+	.row{
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+		display: flex;
+	}
+	
+.primaryCol,.secondaryCol{
+		flex:1;
+		-webkit-flex:1;
+		-moz-box-flex:1;
+		-ms-flex:1;
+		-webkit-box-flex: 1;
+	}
+	.secondaryCol{
+		
+		margin-top:-24.5px;
+	}
+	
+	
+}
+	
+	 
+
+

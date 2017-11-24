@@ -1,0 +1,555 @@
+/***********************
+web fonts
+/***********************/
+@font-face{
+	font-family: 'U.S. 101';
+	src: url('../fonts/US101.TTF') format('truetype');
+	
+}
+
+
+/************************
+GENERAL
+************************/
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+  position:relative;
+  min-height: 100%;
+}
+body{
+	font-family: proxima-nova, sans-serif;
+	
+  
+}
+
+.wrap{
+		min-height: calc(100vh - 167.594px);
+	}
+
+#wrapper {
+	max-width: 940px;
+	min-width: 280px;
+	margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+img{
+  max-width: 100%; 
+}
+
+
+h3{
+  margin: 0 0 1em 0;
+
+}
+
+
+/************************
+HEADING
+************************/
+
+header{
+  margin: 0 0 15px 0; 
+  padding: 5px 0 0 0;
+  height: 300px;
+  background: linear-gradient(#fff,transparent 30%),
+        linear-gradient(0deg, #fff,transparent),
+        #fff url('../img/header.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+header h1,h2{
+  
+  font-family: 'U.S. 101',sans-serif;
+}
+
+
+#logo{
+  text-align: center;
+  margin: 0;
+}
+
+header h1{
+  margin:120px 0 10px 15px;
+  font-weight: bold;
+  letter-spacing: 18px;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+header h2{
+
+  top:-200px;
+  padding-top:-200px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-right:5px;
+  font-size:1em;
+}
+
+/************************
+NAVIGATION
+************************/
+
+nav{
+  font-family: 'U.S. 101',sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  margin: 30px 0 20px 0;
+  letter-spacing:3px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+  font-weight: 800;
+  padding: 15px 10px;
+      
+}
+
+nav a:hover{
+  text-shadow: 0px 0px 20px #fff;
+}
+
+
+
+/************************
+FOOTER
+************************/
+
+.main-footer {
+	
+	
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  -moz-box-direction:column;
+  -ms-flex-direction: column;
+  flex-direction:column;
+  -webkit-flex-direction:column;
+  
+	background: #d9d9d9;
+	margin-top: 30px;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items:center;
+	-moz-box-align:center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content:center;
+	-moz-justify-content:center;
+	padding:10px 0;
+	font-size:0.8em;
+	color:#808080;
+}
+
+
+
+.footer-right ul{
+	list-style:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+.footer-right li{
+	display:inline-block;
+	width:20%;
+	padding:5px;
+	
+	
+}
+
+.footer-right li img {
+ width: 80%; 
+}
+
+
+
+
+
+
+
+
+
+
+/************************
+PAGE: PORTFOLIO
+************************/
+
+
+
+.showreel-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+}
+
+
+
+
+/* Your styles for the iframe */
+.showreel-container iframe {
+	
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+#controls{
+  padding: 2%;
+/*  background: #333;*/
+  background: #fff;
+  color: #aaa;
+  margin-left: 140px;
+  
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover{
+   background: #ff6666;
+}
+
+button.active{
+  background: #ff6666;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.container{
+  
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+/*  background: #68b8c4;*/
+  background: #fff;
+  
+  
+  -webkit-backface-visibility: hidden;
+}
+
+
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  /*background: #03899c;
+  margin-bottom: 2%;*/
+  display: none;
+}
+
+.container .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  /*padding-top: 60%;*/
+}
+
+.container .mix img {
+  padding: 3px;
+  max-width: 100%;
+
+}
+
+
+
+/***********************
+PAGE: item
+***********************/
+#h {
+	font-family: 'U.S. 101',sans-serif;
+	margin-top:0;
+	text-align:center;
+	letter-spacing:5px;
+	font-size: 1.75em;
+	margin-bottom: 60px;
+}
+
+.docs {
+	
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+}
+
+
+
+/* Your styles for the iframe */
+.docs iframe {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+	
+}
+
+.docsImage img {
+	position:relative;
+	width:100%;
+}
+
+#role{
+	text-align:center;
+	font-size: 0.9em;
+}
+
+
+#prod_desc{
+	text-align:center;
+	font-size: 0.9em;
+}
+
+
+
+/************************
+PAGE: ABOUT
+************************/
+
+.primaryCol img{
+   width:100%;
+   margin: 0 auto;
+   top: -20px !important;
+   margin-right:10px;
+}
+
+.secondaryCol h3{
+  font-family: 'U.S. 101',sans-serif;
+  letter-spacing:1px;
+  margin-top:20px !important;
+  margin:0 auto;
+  width:80%;
+}
+
+.secondaryCol p{
+  margin:0 auto;
+  width:80%;
+  padding: 7px 0;
+  font-size:0.9em;
+}
+
+.secondaryCol dl{
+	width:80%;
+	font-size:0.9em;
+	margin: 0 auto;
+	
+}
+.secondaryCol dl h3{
+  margin-left:0;
+  font-family: 'U.S. 101',sans-serif;
+  letter-spacing:1px;
+  margin-top:10px !important;
+  width:80%;
+  margin-bottom: 10px;
+}
+
+.secondaryCol dl dt{
+	font-weight:bold;
+}
+
+
+
+/************************
+PAGE: CONTACT
+************************/
+#contactContainer{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+	
+	-moz-box-direction:column;
+	-ms-flex-direction: column;
+	flex-direction:column;
+	-webkit-flex-direction:column;
+	
+	min-height:25vh;
+	
+	
+	justify-content:center;
+	-webkit-justify-content:center;
+	-moz-justify-content: center;
+	-ms-justify-content:center;
+	
+	
+	align-items:center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	margin-top:20px;
+	
+}
+
+
+
+#details h3{
+	font-family: 'U.S. 101',sans-serif;
+	letter-spacing:1px;
+	text-align:center;
+}
+
+
+
+.contact-info{
+	margin-left: 45px;
+}
+
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  
+}
+
+.contact-info a {
+  
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+
+
+.contact-info li.phone a {
+   background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+   background-image: url('../img/mail.png');
+}
+
+.contact-info li.vimeo a {
+   background-image: url('../img/vimeo.png');
+}
+
+.contact-info li.address a {
+   background-image: url('../img/address.png');
+}
+
+
+
+
+/************************
+COLOURS
+************************/
+
+/* site body */
+body{
+   background-color: #fff;
+   color: #999;
+}
+
+
+/* logo text */
+h1,h2{
+  color: #222;
+}
+
+
+/* links */
+a {
+  color: #ff1a1a; 
+}
+
+/* colour for nav link */
+nav a, nav a:visited {
+  color: #222;
+}
+
+/* selected nav link colour */
+nav a.selected, nav a:hover{
+  color: #666;
+}
+
+
+
+
+
+
+
+
